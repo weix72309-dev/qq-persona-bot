@@ -1,0 +1,4 @@
+interface:
+  display_name: "QQ Group Persona Bot"
+  short_description: "群聊人格机器人：长期记忆 + 关系状态"
+  default_prompt: "Use $qq-group-persona-bot to set up a QQ group bot with a persistent persona and memory."

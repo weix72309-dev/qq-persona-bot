@@ -1,0 +1,66 @@
+{
+  "bot_name": "小满",
+  "dad_qq": [10002],
+  "persona_vars": {
+    "name": "小满",
+    "dad": "爸爸",
+    "名字": "小满",
+    "爸爸的群昵称": "爸爸"
+  },
+  "state": {
+    "enabled": true,
+    "initial": { "trust": 62, "independence": 45, "responsibility": 40 },
+    "score_with_llm": true,
+    "score_cooldown_min": 8,
+    "stale_decay_days": 14
+  },
+  "persona": "persona.md",
+  "admin_qq": [10001],
+  "listen": {
+    "host": "127.0.0.1",
+    "port": 8088,
+    "path": "/onebot",
+    "token": ""
+  },
+  "onebot": {
+    "api_base": "http://127.0.0.1:3000",
+    "token": ""
+  },
+  "llm": {
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.75,
+    "max_tokens": 700,
+    "timeout": 90
+  },
+  "behavior": {
+    "wake_words": ["小满"],
+    "groups": [],
+    "reply_with_at": true,
+    "respond_to_reply": true,
+    "max_reply_chars": 300,
+    "history_window": 16,
+    "max_context_chars": 6000,
+    "memory_budget_chars": 1400,
+    "max_per_group_per_min": 6,
+    "max_per_user_per_min": 3,
+    "workers": 4,
+    "learn_from": "addressed",
+    "dry_run": false
+  },
+  "memory": {
+    "extract_online": true,
+    "min_confidence": 0.6,
+    "retention_days": 60,
+    "max_items": 5,
+    "compact_hours": 6,
+    "digest_after_minutes": 30,
+    "learn_cooldown_sec": 25,
+    "learn_from_group": true
+  }
+}
+
+
+
+
